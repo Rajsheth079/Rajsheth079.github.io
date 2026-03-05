@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Angel Compass</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light pb-5 position-relative">
+        <!-- <img src="images/shadow.png" class="img-fluid shadow-bg" /> -->
+        <div class="container pt-2 pb-2 border-bottom">
+            <a class="navbar-brand logo" href="index.html">
+              <img src="images/header-logo.png" height="85" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#welcome">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" aria-current="page" href="#ceremony">About Us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#business">Business</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#faq">FAQs</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                <!-- <button class="btn login">
+                  <span class="btn">Download App <img src="images/download.png" /></span>
+                </button> -->
+                <button class="btn login">
+                    <span class="btn position-relative">
+                      Add to Cart <img src="images/shopping-cart.png" />
+                      <div class="position-absolute">
+                        <i>9</i>
+                        <span class="visually-hidden">unread messages</span>
+                      </div>
+                    </span>
+                </button>
+            </span>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="py-3 text-center">
+            <h3 class="fw-bold">Product Checkout</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--multisteps-form-->
+        <div class="multisteps-form">
+            <!--progress bar-->
+            <div class="row">
+                <div class="col-12 col-lg-6 m-auto mb-4">
+                    <div class="multisteps-form__progress">
+                        <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">Delivery Info</button>
+                        <button class="multisteps-form__progress-btn" type="button" title="Address">Payment Info</button>
+                        <button class="multisteps-form__progress-btn" type="button" title="Order Info">Order Placed</button>
+                    </div>
+                </div>
+            </div>
+            <!--form panels-->
+            <div class="row">
+                <div class="col-12">
+                    <form class="multisteps-form__form">
+                        <!--single form panel-->
+                        <div class="multisteps-form__panel p-4 rounded js-active" data-animation="scaleIn">
+                            <div class="row mb-4">
+                                <div class="col-md-4 order-2">
+                                    <div class="row px-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-3 p-0">
+                                            <h4 class="mb-0 purple-dark">Your Cart</h4>
+                                            <span class="text-decoration-underline">Edit</span>
+                                        </div>
+                                        <div class="cart-box p-3">
+                                            <div class="d-flex mb-3">
+                                                <div class="flex-shrink-0">
+                                                    <img src="images/cart1.png" width="70" height="70" class="me-3">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <div class="d-flex justify-content-between align-items-end">
+                                                        <div class="media-body">
+                                                            <h6 class="m-0">Flower Decorations for Event</h6>
+                                                            <span class="mt-1 mb-1">1 item</span>
+                                                            <p class="m-0">$149.00</p>
+                                                        </div>
+                                                        <span class="badge"><i class="bi-trash text-dark"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mb-3">
+                                                <div class="flex-shrink-0">
+                                                    <img src="images/cart2.png" width="70" height="70" class="me-3">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <div class="d-flex justify-content-between align-items-end">
+                                                        <div class="media-body">
+                                                            <h6 class="m-0">Flower with Balloons</h6>
+                                                            <span class="mt-1 mb-1">1 item</span>
+                                                            <p class="m-0">$169.00</p>
+                                                        </div>
+                                                        <span class="badge"><i class="bi-trash text-dark"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mb-1">
+                                                <div class="flex-shrink-0">
+                                                    <img src="images/cart3.png" width="70" height="70" class="me-3">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <div class="d-flex justify-content-between align-items-end">
+                                                        <div class="media-body">
+                                                            <h6 class="m-0">Decoration for Wedding</h6>
+                                                            <span class="mt-1 mb-1">1 item</span>
+                                                            <p class="m-0">$549.00</p>
+                                                        </div>
+                                                        <span class="badge"><i class="bi-trash text-dark"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="p-1">Cart ID: 484279631</p>
+
+                                    <div class="row px-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-3 p-0">
+                                            <h4 class="purple-dark mb-0">Order Summary</h4>
+                                        </div>
+                                        <div class="cart-box p-3">
+                                            <div class="card-footer mt-2 mb-2 d-flex justify-content-between">
+                                                <span class="purple-dark">Subtotal (USD)</span>
+                                                <p class="mb-0 purple-dark">$867.00</p>
+                                            </div>
+                                            <hr />
+                                            <div class="card-footer mt-2 mb-2 d-flex justify-content-between">
+                                                <h5 class="fw-bold mb-0 purple-dark">Total</h5>
+                                                <strong class="purple-dark">$867.00</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="p-1 font-small">Tax amount will be reflected in the next step of checkout.</p>
+
+                                    <div class="row px-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-3 p-0">
+                                            <h4 class="purple-dark mb-0">Delivery</h4>
+                                        </div>
+                                        <div class="cart-box p-3">
+                                            <div class="card-footer mt-2 mb-2">
+                                                <span class="m-0 fw-bold">Delivery To:</span>
+                                                <p>ABC Company, 288 First Road, 123 Oak Ave, FL 15, Sunland, CA 91040</p>
+
+                                                <span class="mb-0 fw-bold">Deliver On:</span>
+                                                <p class="mb-0">Fri, May 9</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 order-1">
+                                    <div class="row px-3">
+                                        <h4 class="mb-3 px-0 purple-dark">Delivery Information</h4>
+                                        <div class="cart-box pt-3 px-4">
+                                            <div class="col-md-12 mb-3">
+                                                <label for="country" class="purple-dark">Location Type</label>
+                                                <select class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="First name" class="purple-dark">Recipient’s First Name</label>
+                                                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="La\st name" class="purple-dark">Recipient’s Last Name</label>
+                                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-4">
+                                                <label for="email" class="purple-dark">Business Name</label>
+                                                <input type="text" class="form-control" placeholder="ABC Company" aria-label="Business Name">
+                                            </div>
+                                            <div class="col-md-12 mb-4">
+                                                <label for="Address" class="purple-dark">Delivery Address</label>
+                                                <input type="text" class="form-control" placeholder="288 First Road" aria-label="Delivery Address">
+                                            </div>
+                                            <div class="col-md-12 mb-4">
+                                                <label for="Address2" class="purple-dark">Apartment, Floor Suite (optional)</label>
+                                                <input type="text" class="form-control" placeholder="123 Oak Ave, FL 15" aria-label="Apartment">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 mb-4">
+                                                    <label for="country" class="purple-dark">City</label>
+                                                    <select class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4 mb-4">
+                                                    <label for="state" class="purple-dark">State</label>
+                                                    <select class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4 mb-4">
+                                                    <label for="zip" class="purple-dark">Zip Code</label>
+                                                    <input type="text" class="form-control" aria-label="zip">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-4">
+                                                <label for="state" class="purple-dark">Country</label>
+                                                <select class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">United States</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <label for="zip" class="purple-dark">Delivery Phone Number</label>
+                                                <input type="text" class="form-control" aria-label="zip">
+                                            </div>
+
+                                            <p class="text-muted fst-italic font-small">Delivery phone number helps our florist partners and delivery drivers successfully deliver your gift.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="multisteps-form__content">
+                                <div class="button-row d-flex mt-4">
+                                    <button class="col-md-2 btn mx-auto bg-purple text-white btn-md js-btn-next" type="button" title="Next">
+                                        <i class="bi-arrow-right"></i> Continue to Payment
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--single form panel-->
+                        <div class="multisteps-form__panel p-4" data-animation="scaleIn">
+                            <div class="row mb-4">
+                                <div class="col-md-4 order-2">
+                                    <div class="row px-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-3 p-0">
+                                            <h4 class="purple-dark mb-0">Order Summary</h4>
+                                        </div>
+                                        <div class="cart-box p-3">
+                                            <div class="card-footer mt-2 mb-2 d-flex justify-content-between">
+                                                <span class="purple-dark">Subtotal (USD)</span>
+                                                <p class="mb-0">$867.00</p>
+                                            </div>
+                                            <div class="card-footer mt-2 mb-2 d-flex justify-content-between">
+                                                <span class="purple-dark">Shipping Charges</span>
+                                                <p class="mb-0">Free Shipping</p>
+                                            </div>
+                                            <div class="card-footer mt-2 mb-2 d-flex justify-content-between">
+                                                <span class="purple-dark">Delivery Fee</span>
+                                                <p class="mb-0">$19.99</p>
+                                            </div>
+                                            <div class="card-footer mt-2 mb-2 d-flex justify-content-between">
+                                                <span class="purple-dark">Tax</span>
+                                                <p class="mb-0">$10.05</p>
+                                            </div>
+                                            <hr />
+                                            <div class="card-footer mt-2 mb-2 d-flex justify-content-between">
+                                                <h5 class="fw-bold mb-0 purple-dark">Total</h5>
+                                                <strong class="purple-dark">$897.04</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row px-3 mt-4">
+                                        <div class="d-flex justify-content-between align-items-center mb-3 p-0">
+                                            <h4 class="purple-dark mb-0">Delivery</h4>
+                                        </div>
+                                        <div class="cart-box p-3">
+                                            <div class="card-footer mt-2 mb-2">
+                                                <span class="m-0 fw-bold">Delivery To:</span>
+                                                <p>ABC Company, 288 First Road, 123 Oak Ave, FL 15, Sunland, CA 91040</p>
+
+                                                <span class="mb-0 fw-bold">Deliver On:</span>
+                                                <p class="mb-0">Fri, May 9</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 order-1">
+                                    <div class="row px-3">
+                                        <h4 class="mb-3 px-0 purple-dark">Payment Information</h4>
+                                        <div class="cart-box pt-3 px-4">
+                                            <div class="col-md-12 mb-3">
+                                                <label for="Card1" class="mb-2 purple-dark">Credit Card</label>
+                                                <input type="text" class="form-control" placeholder="Credit Card Number" aria-label="Card2">
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <input type="text" class="form-control" placeholder="Name on Card" aria-label="card1">
+                                                <small class="text-muted font-small">
+                                                  Full name, as displayed on the card
+                                                </small>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-md-6 mb-3">
+                                                  <input type="text" class="form-control" placeholder="Expiration (MM/YYYY)" aria-label="Card2">
+                                              </div>
+                                              <div class="col-md-6 mb-3">
+                                                  <input type="text" class="form-control" placeholder="CVV" aria-label="Card2">
+                                              </div>
+                                            </div>
+                                            <p class="purple-dark">We accept: <img src="images/cards.png" class="img-fluid" width="150" height="30" /></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="multisteps-form__content">
+                                <div class="button-row d-flex mt-4">
+                                    <button class="col-md-2 btn mx-auto bg-purple text-white btn-md js-btn-next" type="button" title="Next">
+                                        <i class="bi-arrow-right"></i> Place your Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--single form panel-->
+                        <div class="multisteps-form__panel p-4 mt-3 text-center" data-animation="scaleIn">
+                            <h3 class="multisteps-form__title fw-bold">Thank You</h3>
+                            <div class="multisteps-form__content">
+                                <img src="images/thank-you.svg" class="img-fluid my-4" width="150" height="150" />
+                                <h4>Your order has been successfully placed.<br />Thank you for shopping with us !</h4>
+                                <div class="button-row d-flex my-4">
+                                    <button class="col-md-2 btn mx-auto bg-purple btn-md text-white js-btn-next" type="button" title="Send">
+                                      <i class="bi-arrow-right"></i> Continue Shopping
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-2" id="footer">
+        <div class="container my-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-2">
+                    <img src="images/footer-logo.png" class="img-fluid mb-3" />
+                </div>
+
+                <!-- <div class="col-md-3 offset-md-1"> -->
+                <div class="col-lg-3 col-md-4 offset-md-1">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h3 class="pb-3">Welcome</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#about" class="text-decoration-none">About Us</a></li>
+                                <li><a href="#features" class="text-decoration-none">Features</a></li>
+                                <li><a href="#business" class="text-decoration-none">Business Signup</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3 class="pb-3">Quick Links</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#faqs" class="text-decoration-none">FAQs</a></li>
+                                <li><a href="#contact" class="text-decoration-none">Contact</a></li>
+                                <li><a href="#subscription" class="text-decoration-none">Waiting List</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 offset-md-1">
+                    <h2 class="pb-1">Download App</h2>
+                    <p>Experience the best of Angel Compass anytime, anywhere! Download our app today and enjoy seamless access to Group Chat, Create and Edit Events.</p>
+                    <div class="d-inline-flex">
+                        <button class="btn p-0 me-2">
+                            <a href="#"><img src="images/play-store.png" alt="..." /></a>
+                        </button>
+                        <button class="btn p-0">
+                            <a href="#"><img src="images/app-store.png" alt="..." /></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-2">
+            <div class="row align-items-center mt-5 mb-0 border-top">
+                <div class="col-12 col-md-6">
+                    <ul class="list-unstyled list-group list-group-horizontal mt-3">
+                        <li class="me-3 fw-light">Privacy Policy </li>
+                        <li class="fw-light">Terms of Use</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 text-start text-lg-end mt-3 mt-sm-1">
+                    <span class="d-block fw-light">Copyright © 2025 Angel Compass | All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='js/jquery.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
