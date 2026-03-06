@@ -188,8 +188,9 @@ a.nav-link.active {
     line-height: 1.5em;
 }
 #ceremony img {
-    /*width: 780px;*/
-    height: 343px;
+    /*height: 343px;*/
+
+    width: 550px;
 }
 #ceremony .more-btn {
     border: none;
