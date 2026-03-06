@@ -121,7 +121,7 @@ a.nav-link.active {
     line-height: 1.5em;
 }
 #welcome img {
-    width: 480px;
+    width: 400px;
     height: auto;
 }
 #welcome p {
@@ -875,6 +875,6 @@ a.nav-link.active {
 }
 @media only screen and (max-width: 575px) {
     #welcome img {
-        width: 350px;
+        width: 250px;
     }
 }
