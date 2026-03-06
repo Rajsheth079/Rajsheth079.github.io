@@ -109,7 +109,7 @@ a.nav-link.active {
     line-height: 1.2em;
 }
 #welcome h2 span {
-    font-size: 78px;
+    font-size: 62px;
     color: #9B7FB1;
     font-weight: 800;
     line-height: 1.2em;
@@ -384,7 +384,9 @@ a.nav-link.active {
 #videoBg {
   position: relative;
   background-color: #9B7FB1;
-  height: calc(480px - 72px);
+  /*height: calc(480px - 72px);*/
+
+  height: calc(100% - 15%);
   overflow: hidden;
 }
 #videoBg video {
@@ -852,7 +854,7 @@ a.nav-link.active {
         font-size: 34px;
     }
     #business h2, #ceremony h3, .video-background-content h2, #testimonial h2, #contact h2 {
-        font-size: 32px;
+        font-size: 29px;
     }
     #footer h2 {
         font-size: 26px;
